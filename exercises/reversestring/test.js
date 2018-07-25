@@ -1,4 +1,4 @@
-const { reverse, reverseV2, reverseV3 } = require("./index")
+const { reverse, reverseV2, reverseV3, reverseV4 } = require("./index")
 
 describe("reverse", () => {
   test("Reverse function exists", () => {
@@ -41,3 +41,19 @@ describe("reverseV3", () => {
     expect(reverseV3("  abcd")).toEqual("dcba  ")
   })
 });
+
+describe("reverseV4", () => {
+  test("Reverse function exists", () => {
+    expect(reverseV4).toBeDefined()
+  })
+
+  test("Reverse reverses a string", () => {
+    expect(reverseV4("abcd")).toEqual("dcba")
+  })
+
+  test("Reverse reverses a string", () => {
+    expect(reverseV4("  abcd")).toEqual("dcba  ")
+  })
+});
+
+

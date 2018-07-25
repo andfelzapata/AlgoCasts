@@ -25,14 +25,17 @@ const reverseV2 = str =>
 
 const reverseV3 = str => {
   let reversed = ""
-  for(let character of str) {
+  for (let character of str) {
     reversed = character + reversed
   }
   return reversed
 }
 
+const reverseV4 = str => str.split("").reduce((reve, char) => char + reve, "")
+
 module.exports = {
   reverse,
   reverseV2,
-  reverseV3
+  reverseV3,
+  reverseV4
 }
