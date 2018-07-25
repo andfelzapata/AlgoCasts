@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write 'exercises/**/*'"
   },
   "dependencies": {
     "jest": "^23.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7"
   }
 }
