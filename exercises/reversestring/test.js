@@ -1,29 +1,43 @@
-const { reverse, reverseES6 } = require("./index");
+const { reverse, reverseV2, reverseV3 } = require("./index")
 
 describe("reverse", () => {
   test("Reverse function exists", () => {
-    expect(reverse).toBeDefined();
-  });
+    expect(reverse).toBeDefined()
+  })
 
   test("Reverse reverses a string", () => {
-    expect(reverse("abcd")).toEqual("dcba");
-  });
+    expect(reverse("abcd")).toEqual("dcba")
+  })
 
   test("Reverse reverses a string", () => {
-    expect(reverse("  abcd")).toEqual("dcba  ");
-  });
-});
+    expect(reverse("  abcd")).toEqual("dcba  ")
+  })
+})
 
-describe("reverseES6", () => {
+describe("reverseV2", () => {
   test("Reverse function exists", () => {
-    expect(reverseES6).toBeDefined();
-  });
+    expect(reverseV2).toBeDefined()
+  })
 
   test("Reverse reverses a string", () => {
-    expect(reverseES6("abcd")).toEqual("dcba");
-  });
+    expect(reverseV2("abcd")).toEqual("dcba")
+  })
 
   test("Reverse reverses a string", () => {
-    expect(reverseES6("  abcd")).toEqual("dcba  ");
-  });
+    expect(reverseV2("  abcd")).toEqual("dcba  ")
+  })
+})
+
+describe("reverseV3", () => {
+  test("Reverse function exists", () => {
+    expect(reverseV3).toBeDefined()
+  })
+
+  test("Reverse reverses a string", () => {
+    expect(reverseV3("abcd")).toEqual("dcba")
+  })
+
+  test("Reverse reverses a string", () => {
+    expect(reverseV3("  abcd")).toEqual("dcba  ")
+  })
 });
